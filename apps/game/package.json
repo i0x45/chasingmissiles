@@ -1,0 +1,22 @@
+{
+  "name": "@missiles/game",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "build": "vite build",
+    "typecheck": "tsc -p ../../tsconfig.json",
+    "lint": "eslint src vite.config.ts",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@missiles/shared": "workspace:*",
+    "phaser": "3.90.0",
+    "@fontsource/barlow-condensed": "^5.2.8",
+    "@fontsource/dm-sans": "^5.2.8"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
+}
