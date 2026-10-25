@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "lint": { "outputs": [] },
+    "typecheck": { "dependsOn": ["^typecheck"], "outputs": [] },
+    "test": { "dependsOn": ["^test"], "outputs": [] },
+    "build": { "dependsOn": ["^build"], "outputs": [] },
+    "@missiles/game#build": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "outputs": []
+    }
+  }
+}

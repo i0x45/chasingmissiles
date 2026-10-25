@@ -1,0 +1,24 @@
+{
+  "name": "missiles",
+  "version": "0.2.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev:game": "pnpm --filter @missiles/game dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "format": "prettier --write apps packages *.json *.md"
+  },
+  "devDependencies": {
+    "turbo": "2.11.10",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5",
+    "eslint": "10.13.0",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.72.0",
+    "prettier": "3.9.0",
+    "@types/node": "^22.0.0"
+  }
+}
